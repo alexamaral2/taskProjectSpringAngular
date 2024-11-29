@@ -23,6 +23,7 @@ services:
       - "4200:4200"
     volumes:
       - ./frontend/task-manager:/usr/src/app
+      - /usr/src/app/node_modules
     networks:
       - app-network
     depends_on:
